@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angularSRC": {
+    "jemay-angular-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "../public",
+            "outputPath": "../dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -36,7 +36,7 @@
               ]
             },
             "scripts": [
-              "node_modules/jquery/jquery.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
               "node_modules/popper.js/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/chart.js/dist/chart.js"
@@ -77,18 +77,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angularSRC:build"
+            "browserTarget": "jemay-angular-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angularSRC:build:production"
+              "browserTarget": "jemay-angular-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angularSRC:build"
+            "browserTarget": "jemay-angular-app:build"
           }
         },
         "test": {
@@ -125,15 +125,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angularSRC:serve"
+            "devServerTarget": "jemay-angular-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angularSRC:serve:production"
+              "devServerTarget": "jemay-angular-app:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angularSRC"
+  "defaultProject": "jemay-angular-app"
 }
