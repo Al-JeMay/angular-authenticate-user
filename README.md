@@ -13,7 +13,7 @@
     http://localhost:3000
 
 ## Live Demo
-* [Al-JeMay Angular Authentication User](https://jemay-angular-app.herokuapp.com/)
+* [My Angular Authentication User](https://jemay-angular-app.herokuapp.com/)
 
 ## thanks
-* [Al~Jemay](https://github.com/Al-JeMay/aem-test-2)
+* [Al~Jemay](https://github.com/Al-JeMay/angular-authenticate-user)
