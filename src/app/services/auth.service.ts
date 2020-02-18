@@ -16,7 +16,7 @@ export class AuthService {
     let headers = new HttpHeaders();
     headers.append('Content-Type','application/json');
     return this.http.post(
-      'https://jemay-angular-app.herokuapp.com/login',
+      '/login',
       user,
       {headers: headers})
         .pipe(map((response: any) => response));
@@ -28,7 +28,7 @@ export class AuthService {
     headers.append('Authorization', `Bearer ${this.authToken}`);
     headers.append('Content-Type','application/json');
     return this.http.get(
-      'https://jemay-angular-app.herokuapp.com/profile',
+      '/profile',
       {headers: headers})
         .pipe(map((response: any) => response));
   }
@@ -39,7 +39,7 @@ export class AuthService {
     headers.append('Authorization', `Bearer ${this.authToken}`);
     headers.append('Content-Type','application/json');
     return this.http.get(
-      'https://jemay-angular-app.herokuapp.com/api/dashboard',
+      '/api/dashboard',
       {headers: headers})
         .pipe(map((response: any) => response));
   }
