@@ -7,13 +7,13 @@
 ## Install the package dependencies
 1. npm install
 
-## Install the package dependencies
+## Run the Angular app
 2. npm start
 
 > Development environment will run on localhost port 3000
   http://localhost:3000
 
-## Live Demo
+## Live demo
 * [My Angular Authentication User](https://jemay-angular-app.herokuapp.com/)
 
 ## thanks
