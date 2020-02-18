@@ -1,16 +1,17 @@
-# Al-JeMay Angular Authentication User
+# Al-JeMay ~ Angular Authentication User
 
 ## Installation
 
 > Install both Server (Express) & Client (Angular)
 
-## Install the Server (Express)
+## Install the package dependencies
 1. npm install
+
+## Install the package dependencies
 2. npm start
 
 > Development environment will run on localhost port 3000
-
-    http://localhost:3000
+  http://localhost:3000
 
 ## Live Demo
 * [My Angular Authentication User](https://jemay-angular-app.herokuapp.com/)
