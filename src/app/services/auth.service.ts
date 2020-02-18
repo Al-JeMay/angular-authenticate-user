@@ -16,7 +16,7 @@ export class AuthService {
     let headers = new HttpHeaders();
     headers.append('Content-Type','application/json');
     return this.http.post(
-      '/login',
+      '/api/account/login',
       user,
       {headers: headers})
         .pipe(map((response: any) => response));
@@ -28,7 +28,7 @@ export class AuthService {
     headers.append('Authorization', `Bearer ${this.authToken}`);
     headers.append('Content-Type','application/json');
     return this.http.get(
-      '/profile',
+      '/api/account/profile',
       {headers: headers})
         .pipe(map((response: any) => response));
   }
